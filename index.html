@@ -866,6 +866,70 @@ html.rd,html.rd body{overflow:auto;height:auto}
 .xsim .stat .n{font-family:var(--f-display);font-size:30px;font-weight:700;font-variant-numeric:tabular-nums}
 .xsim .stat .l{font-size:14px;color:var(--muted)}
 </style>
+<style>
+/* ===== Mode lecture : téléphone et tablette ===== */
+.rd #deck{width:100%!important;min-width:0!important;max-width:1000px;padding:10px 12px 80px}
+.rd .slide{width:auto;min-width:0;overflow:visible}
+.rd .hd{padding:12px 50px 0 12px;gap:10px}
+.rd .hd h2{font-size:21px}
+.rd .bd{padding:12px;gap:12px;justify-content:flex-start}
+.rd .bd .split,.rd .bd .g2,.rd .bd .g3,.rd .bd .g4,.rd .p4,.rd .p3,.rd .cmp,.rd .plan,.rd .path,.rd .jobs,.rd .crisis,.rd .step7,.rd .vt,.rd .poll,.rd .dk,.rd .stackv,.rd .say2,.rd .fact,.rd .chapw{grid-template-columns:1fr!important}
+.rd .fact{gap:6px}.rd .fact .n{font-size:36px}
+.rd .hero{font-size:30px}.rd .bigq,.rd .ask{font-size:22px}.rd .lead{font-size:18px}
+.rd .def,.rd .def.alt{font-size:17px;padding:14px 16px}
+.rd .keep{font-size:15px;grid-template-columns:1fr}
+.rd .chain{gap:4px}.rd .chain span{font-size:13px;padding:6px 8px}.rd .chain i{font-size:14px}
+.rd .vchain span{min-width:0;width:100%;font-size:14px}
+.rd .flow{flex-wrap:wrap}.rd .flow>div{flex:1 1 44%;font-size:14px}.rd .flow>i{display:none}
+.rd .cmdbig{font-size:18px;padding:10px 12px;gap:10px}
+.rd .ann div{font-size:14px}.rd .ann code{font-size:15px}
+.rd .term2,.rd .cmdb2,.rd .codeblk{font-size:12px!important}
+.rd table.t{font-size:13px}.rd table.t th{font-size:12.5px;padding:6px 8px}.rd table.t td{padding:6px 8px}
+.rd .tw,.rd table.t{display:block;overflow-x:auto;max-width:100%}
+.rd table.t tbody{display:table;width:100%;min-width:560px}
+.rd .bubble{max-width:100%;font-size:16px}
+.rd .stk div{font-size:14px}.rd .box3d div{font-size:15px}
+.rd .vt button,.rd .poll button,.rd .opts4 button{font-size:15px;padding:9px 10px}
+.rd .kc,.rd .kc2c{grid-template-columns:1fr!important}
+.rd .kc .kq .opts,.rd .kc2c .kq .opts{grid-template-columns:1fr!important}
+.rd .kc .kq>p{font-size:16px}.rd .kc .kq button{font-size:14px}
+.rd .p4 .L{font-size:34px}.rd .p4 h3,.rd .p3 header{font-size:19px}.rd .p4 p,.rd .p3 .c{font-size:15px}
+.rd .jobs h3{font-size:18px}.rd .jobs p{font-size:15px}
+.rd .box h3{font-size:19px}.rd .box p,.rd .box li{font-size:16px}
+.rd ul.pts li{font-size:16px}
+.rd .path>div::before{display:none}
+.rd .chapill{display:none}.rd .chapw .num{font-size:70px;text-align:left}.rd .chapw h3{font-size:26px}.rd .chapw ol{font-size:17px}
+.rd .minisyn svg{max-height:none}
+.rd .bd>svg,.rd .bd svg[viewBox]{max-width:100%;height:auto!important}
+.rd .step7>div{font-size:14px}
+.rd .s-end .q{font-size:30px}.rd .s-end .t{font-size:17px}
+.rd .note{font-size:15px}
+/* simulateurs : colonne unique, défilement horizontal si besoin */
+.rd .sim{padding:10px}.rd .sim .hdr p{font-size:14px}.rd .btn{font-size:14px;padding:8px 10px}
+.rd .sim>div[style*="grid-template-columns"]{grid-template-columns:1fr!important}
+.rd .xsim{zoom:1;font-size:15px}
+.rd .xsim .sim-body{flex-direction:column;overflow:auto;gap:10px;padding:10px}
+.rd .xsim .sim-body>*{width:auto!important;max-width:100%;flex:none!important}
+.rd .xsim .sim-body [style*="grid-template-columns"]{grid-template-columns:1fr!important}
+.rd .xsim .sim-body [style*="position:relative"]{overflow-x:auto}
+.rd .xsim .sim-head .msg{font-size:15px}.rd .xsim .cmdline{font-size:16px;padding:8px 10px;gap:8px}.rd .xsim .term,.rd .xsim .cmdblock{font-size:12px}.rd .xsim .sbtn{font-size:14px;padding:6px 9px}
+.rd .xsim .sim-why,.rd .xsim .sim-keep{font-size:14px}
+.rd .xsim .cyc-wrap{transform:scale(.6);transform-origin:0 0;height:270px;width:340px}
+.rd .cmdb2,.rd .term2,.rd .codeblk,.rd .minilog,.rd .console,.rd .logl{max-width:100%;overflow-x:auto}
+.rd .ft{font-size:11px}
+#ctrl{max-width:calc(100vw - 20px);flex-wrap:wrap;justify-content:flex-end}
+@media (max-width:760px){
+  .rd .hd{flex-direction:row;align-items:flex-start}
+  .rd .std::after{width:36px;height:80px}
+  .rd .s-title h1{font-size:38px}
+  .rd .s-title dl{grid-template-columns:1fr;gap:2px 0}
+  .rd .s-title dt{margin-top:8px}
+}
+@media (min-width:761px) and (max-width:1024px){
+  .rd .bd .g2,.rd .p4,.rd .jobs,.rd .vt,.rd .step7,.rd .kc2c{grid-template-columns:1fr 1fr!important}
+  .rd .hd h2{font-size:26px}.rd .lead{font-size:20px}
+}
+</style>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
 <defs>
 <symbol id="i-dev" viewBox="0 0 64 64"><circle cx="32" cy="17" r="10" fill="currentColor" opacity=".18"/><circle cx="32" cy="17" r="10" fill="none" stroke="currentColor" stroke-width="3"/><path d="M14 50c2-10 9-16 18-16s16 6 18 16" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><rect x="16" y="44" width="32" height="14" rx="2" fill="#fff" stroke="currentColor" stroke-width="3"/><path d="M27 49l-3 3 3 3M37 49l3 3-3 3" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
@@ -2372,7 +2436,9 @@ $$('[data-copy]').forEach(function(b){b.addEventListener('click',function(e){e.s
 
 /* ================= Démarrage ================= */
 var h0=parseInt((location.hash||'').replace('#',''),10);fit();show(isNaN(h0)?0:h0-1);wake();
-if(window.innerWidth<760)setMode(true);
+function autoMode(){var small=window.innerWidth<760||(window.innerWidth<1024&&window.innerHeight>window.innerWidth);if(small&&!html.classList.contains('rd')&&!userMode)setMode(true);}
+var userMode=false;$('#bMode').addEventListener('click',function(){userMode=true;});
+autoMode();window.addEventListener('resize',autoMode);
 })();
 </script>
 
